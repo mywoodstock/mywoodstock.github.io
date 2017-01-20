@@ -1,0 +1,19 @@
+/* text */
+
+div#content p.contentText:first-child:first-letter {
+	color: #6c000a;
+}
+
+/* positioning */
+
+div#mainHeader {
+	background-color: #003b12;
+}
+
+div#headerComment {
+	border-bottom: 2px dotted #003b12;
+}
+
+div#navigation > a {
+	background-color: #003b12;
+}

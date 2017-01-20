@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta name="author" content="Abhinav Sarje" /> 
+<meta name="keywords" content="Abhinav Sarje, Homepage, Abhinav, Sarje, Parallel, Cell, GPU" /> 
+<meta name="description" content="The Web Namespace of Abhinav Sarje" /> 
+<meta name="copyright" content="&copy; 2010 Abhinav Sarje" /> 
+
+<title>namespace sarje :: research</title>
+
+<style type="text/css">
+@import url(pages.css);       /* import the main css file */
+</style>
+</head>
+
+<body onload="window.defaultStatus='namespace sarje::abhinav::research';" id="home">
+
+<div id="mainContainer">
+
+<div id="headContainer">
+
+<div id="mainHeader">
+<span class="mainHeadText" id="lastname">sarje</span>
+<span class="mainHeadText" id="namespace">::</span>
+<span class="mainHeadText" id="firstname">abhinav</span>
+<span class="mainHeadText" id="function">()</span>
+<span class="mainHeadText" id="braces"> {</span>
+</div> <!-- mainHeader -->
+
+<div id="navigation">
+<a class="localLink" href="about.html">about<span class="function">();</span></a>
+<a class="localLink" href="research.html">research<span class="function">();</span></a>
+<a class="localLink" href="publications.html">publications<span class="function">();</span></a>
+<a class="localLink" href="past.html">academics<span class="function">();</span></a>
+<a class="localLink" href="misc.html">experience<span class="function">();</span></a>
+<a class="localLink" href="updates.html">updates<span class="function">();</span></a>
+<a class="localLink" href="contact.html">contact<span class="function">();</span></a>
+<a class="localLink" href="index.html">return home<span class="function">();</span></a>
+</div> <!-- navigation -->
+
+<div id="footer">
+<span class="footerText" id="braces">}</span>
+<span class="footerText" id="copyright">//&nbsp;
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+		<img src="images/cc.png" /><img src="images/nc.png" /><img src="images/sa.png" />
+	</a>
+</span>
+</div> <!-- footer -->
+
+</div> <!-- headContainer -->
+
+<div id="contentContainer">
+
+<div id="contentHeader">
+<span class="mainHeadText" id="namespace">::</span>
+<span class="mainHeadText" id="contentHeadTitle">research</span>
+</div> <!-- contentHeader -->
+
+<div id="content">
+
+<div class="contentSection">
+<span class="sectionTitle">interests</span>
+
+<span class="sectionText">
+My research interests include the following:
+
+<div class="columns">
+<div class="leftColumn">
+<span class="listItem">High Performance Computing</span>
+<span class="listItem">Parallel Algorithms</span>
+<span class="listItem">Scientific Computing</span>
+</div>
+<div class="rightColumn">
+<span class="listItem">Algorithms & Applications on Emerging Architectures</span>
+<span class="listItem">String and Text Algorithms</span>
+<span class="listItem">Cloud Computing & Abstractions</span>
+</div>
+</div> <!-- columns -->
+
+</span> <!-- sectionText -->
+
+</div> <!-- contentSection -->
+
+
+<div class="contentSection">
+<span class="sectionTitle">select primary projects [very old]</span>
+
+<span class="contentSubsection">
+<span class="sectionSubtitle">
+<span class="bullet"></span>
+A cloud computing based abstract framework for computations on trees
+</span>
+<span class="description">
+On the lines of functional-style programming frameworks, we propose and demonstrate an abstract framework to perform computations on Tree data structures. All the computational patterns are abstracted away, allowing the framework to be general enough to implement numerous applications using the framework. The application specific information is provided by the user and this is neatly abstracted from the system implementation which may be in a distributed/parallel fashion. Our demonstration implementation of the framework is designed as a generic-programming C++ library.
+</span>
+</span> <!-- contentSubsection -->
+
+<span class="contentSubsection">
+<span class="sectionSubtitle">
+<span class="bullet"></span>
+Accelerating pairwise computations in parallel on multi- and many-cores
+</span>
+<span class="description">
+Given the architectural limitations of the emerging high performance architectures -- small Local Stores on the SPEs and explicit DMA transfers on the Cell processor, small on-chip shared memory on graphics processors, these parallel approachs to efficiently schedule all-pairs computations between vectors, obtains efficiency by optimizing the number of memory transfers and efficient usage of the on-chip memories. These approaches can be easily applied to dense matrix computations based on pairwise calculations. Applications of this lie in various fields, including materials science, fluid dynamics and systems biology. Our C/C++ libraries, libpnorm and libpairwise, are available under LGPL and BSL, and can be downloaded from our <a class="externalLink" href="http://aluru-sun.ece.iastate.edu">group website.</a>
+</span>
+</span> <!-- contentSubsection -->
+
+<span class="contentSubsection">
+<span class="sectionSubtitle">
+<span class="bullet"></span>
+Parallel algorithms for genomic alignments on the heterogeneous multi-cores
+</span>
+<span class="description">
+Two prominent parallel algorithms for sequence alignments exist. One uses the wavefront pattern, and the other is based on parallel-prefix. A comparison of these algorithms for performance on a cheap high-performance processor, the Cell BE, leads to a hybrid algorithm based on these two approaches. This scheme gives speedups of four on a Playstation 3 (six SPEs) compared to a Pentium 4 processor. Furthermore, it gives speedups of seven on a QS20 Cell blade (sixteen SPEs). These hold for the three varieties of alignments – global/local, spliced and syntenic.
+</span>
+</span> <!-- contentSubsection -->
+
+<span class="contentSubsection">
+<span class="sectionSubtitle">
+<span class="bullet"></span>
+Construction of gene regulatory networks in parallel on clusters of Cell processors
+</span>
+<span class="description">
+A parallel algorithm for construction of gene regulatory network, based on mutual information computations using B-splines, implemented on a small cluster of Cell processors gives performance comparable to a high-end massive parallel processing system, like the IBM Blue Gene/L. One QS20 Cell blade gives a speedup of more than seven relative to a Pentium D processor. Using a cluster of eight QS20 Cell blades gives a performance gain of two over 128 nodes of Blue Gene/L.
+</span>
+</span> <!-- contentSubsection -->
+
+</div> <!-- contentSection -->
+
+</div> <!-- content -->
+
+</div> <!-- contentContainer -->
+
+</div> <!-- mainContainer -->
+
+<script type="text/javascript">
+var sc_project=4289698; 
+var sc_invisible=1; 
+var sc_partition=54; 
+var sc_click_stat=1; 
+var sc_security="317e8366"; 
+</script>
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a title="blogger counter" class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c.statcounter.com/4289698/0/317e8366/1/" alt="blogger counter" /></a></div></noscript>
+
+</body>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22725414-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</html>

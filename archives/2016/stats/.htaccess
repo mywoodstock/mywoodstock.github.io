@@ -1,0 +1,6 @@
+Options +Indexes
+AuthType Basic
+AuthName "abhinavsarje.net Statistics"
+AuthUserFile /var/chroot/home/content/29/6433129/html/stats/.statspwd
+Require valid-user
+DirectoryIndex index.html

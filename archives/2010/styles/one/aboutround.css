@@ -1,0 +1,9 @@
+div.aboutBlock p.aboutHead {
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+}
+
+div.aboutBlock p.aboutHead > span {
+}

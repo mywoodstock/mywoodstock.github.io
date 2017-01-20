@@ -1,0 +1,54 @@
+div.presentdetails p.contentTextHead > span {
+	top: -0.08em;
+}
+
+div.presentdetails div.top {
+	background: url(../../images/dot.png) 0 0 repeat-x;
+	margin-bottom: 15px;
+}
+
+div.presentdetails div.bottom {
+	background: url(../../images/dot.png) 0 100% repeat-x;
+}
+
+div.presentdetails div.left {
+	background: url(../../images/ltitle.png) 0 0 no-repeat;
+}
+
+div.presentdetails div.right {
+	height: 23px;
+	background: url(../../images/rtitle.png) 100% 0 no-repeat;
+}
+
+/* other IE hacks */
+
+div.presentdetails p.contentTextHead {
+	padding-top: 0;
+}
+
+div.presentdetails {
+	margin: 20px;
+}
+
+p.projectdeatils {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.projectTitle {
+	margin-left: 0;
+}
+
+.projectDescription {
+	margin-left: 0.5em;
+}
+
+span.pubtitle {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+div.semester {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}

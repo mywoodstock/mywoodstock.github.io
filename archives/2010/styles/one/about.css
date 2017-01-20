@@ -1,0 +1,134 @@
+#mainContainer {
+	min-width: 755px;
+}
+
+.mainheadText[id="first"] {
+	font-family: 'Arial Black', 'Gadget', 'Gill Sans', 'Marker Felt', 'Charcoal', 'Franklin Gothic Medium', sans-serif;
+	text-transform: lowercase;
+	position: relative;
+	letter-spacing: 5px;
+	font-size: 7em;
+	color: #d5d5d5;
+	vertical-align: -6%;
+	z-index: 0;
+}
+
+.mainheadText[id="last"] {
+	font-family: 'Georgia', 'Platino', 'Platino Linotype', serif;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	position: relative;
+	left: -5em;
+	z-index: 1;
+	visibility: inherit;
+	color: #444;
+}
+
+div#content {
+	font-family: 'Zurich', sans-serif;
+	text-align: left;
+	color: #333;
+	line-height: 1.5em;
+}
+
+div.misc {
+	text-align: center;
+}
+
+div.aboutBlock {
+	clear: both;
+	padding-top: 5px;
+}
+
+div.aboutBlock p.aboutHead {
+	font-weight: bold;
+	font-size: 2em;
+	max-height: 0.6em;
+	color: #444;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: right;
+}
+
+div.aboutBlock p.aboutHead > span {
+	visibility: inherit;
+	position: relative;
+/*	opacity: 0.4; */
+	color: #bbb;
+}
+
+/*p.aboutHead div.top, p.aboutHead div.bottom, p.aboutHead div.left, p.aboutHead div.right {
+	display: inline;
+}*/
+
+div.columns {
+	width: 94%;
+	margin-left: 3%;
+	margin-top: -10px;
+}
+
+.descriptionText {
+	clear: both;
+}
+
+div.aboutBlock p.descriptionText span.imageSpan {
+	display: inline-block;
+	padding: 1em;
+	min-width: 90px;
+}
+
+p.descriptionText span.textSpan {
+	clear: both;
+}
+
+span#xhtml {
+	padding-top: 1.5em;
+	width: 45%;
+	float: left;
+	text-align: right;
+}
+
+span#css {
+	padding-top: 1.5em;
+	float: left;
+	text-align: left;
+}
+
+span#firefox {
+	display: block;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+span#tux {
+	padding-top: 20px;
+	padding-right: 20px;
+	width: 30%;
+	float: left;
+	text-align: right;
+}
+
+span#ubuntu {
+	padding-top: 35px;
+	width: 150px;
+	float: left;
+	text-align: left;
+}
+
+div.leftColumn {
+	width: 49%;
+	float: left;
+}
+
+div.rightColumn {
+	width: 48%;
+	float: left;
+	margin-left: 2%;
+}
+
+#mainFooter {
+}

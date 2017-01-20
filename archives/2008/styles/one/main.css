@@ -1,0 +1,227 @@
+/* links */
+
+a:link {
+	text-decoration: none;
+	color: #888;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.externalLink {
+	color: #888;
+}
+
+a.localLink {
+}
+
+a.externalLink:after {
+	content: "";
+}
+
+/* text */
+
+.mainheadText {
+	font-size: xx-large;
+}
+
+.mainheadText[id="first"] {
+	font-family: 'Georgia', serif;
+	position: relative;
+	letter-spacing: 0.4em;
+	color: #000;
+	z-index: 1;
+	visibility: inherit;
+	opacity: 0.7;
+}
+
+.mainheadText[id="last"] {
+	font-family: 'Arial Black', sans-serif;
+	text-transform: lowercase;
+	position: relative;
+	left: -1.5em;
+	font-size: 7em;
+	color: #d5d5d5;
+	vertical-align: -6%;
+	z-index: 0;
+}
+
+.footerText {
+	font-family: 'Zurich', sans-serif;
+	font-weight: lighter;
+	color: #666;
+	font-size: x-small;
+}
+
+p.commentText {
+	font-family: 'futura', serif;
+	font-weight: lighter; 
+	font-size: 90%;
+	color: #aaa;
+	font-style: italic;
+}
+
+p.contentText {
+	font-family: 'Zurich', sans-serif;
+	text-align: left;
+	color: #333;
+	line-height: 1.5em;
+}
+
+div#mainContainer {
+	font-size: small;
+}
+
+div#content p.contentText:first-child:first-letter {
+	font-family: 'Georgia', serif;
+	font-size: 5em;
+	font-weight: bold;
+	color: #d0d0d0;
+	float: left;
+	margin-right: -0.5em;
+}
+
+div#content p.contentText:first-child {
+}
+
+div.construction {
+	background-color: #f0f0f0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.construction:before {
+	font-family: 'Zurich', sans-serif;
+	font-weight: bolder;
+	font-style: italic;
+	color: #333;
+	content: "Still a construction zone. Please check back later.";
+	margin-left: 15%;
+	width: 50%;
+}
+
+/* positioning */
+
+#mainContainer {
+	display: block;
+	width: 85%;
+	min-width: 550px;
+   	padding: 2.5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 1.5%;
+	padding-top: 0;
+}
+
+div#mainHeader {
+	display: block;
+	padding-bottom: 1.5%;
+	padding-left: 10%;
+	text-align: center;
+	background-color: #fff;
+}
+
+.mainheadText {
+	text-transform: uppercase;
+}
+
+div#headerComment {
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 25px;
+	text-align: center;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	border: 2px solid #ccc;
+	border-radius: 14px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+div#content {
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+/* navigation bars */
+
+#navigation {
+	clear: both;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+	margin-top: 40px;
+	max-height: 1.5em;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#navigation .localLink {
+	color: #444;
+}
+
+div#navigation > a {
+	display: inline-block;
+	width: 28%;
+	max-height: 0.02em;
+	padding: 0.2em;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	position: relative;
+}
+
+div#navigation > a > span {
+	display: inline-block;
+	margin-top: -0.7em;
+	vertical-align: 56%;
+	visibility: inherit;
+	opacity: 0.3;
+}
+
+div#navigation > a:hover {
+	text-decoration: none;
+	background-color: #ddd;
+	height: 1.5em;
+}
+
+div#navigation > a:hover > span {
+	visibility: inherit;
+	opacity: 0.5;
+}
+
+/*
+div#navigation > a[href^="contact"]:hover {
+	background-color: #6c000a;
+}
+
+div#navigation > a[href^="past"]:hover {
+	background-color: #757000;
+}
+
+div#navigation > a[href^="present"]:hover {
+	background-color: #022f65;
+}
+
+div#navigation > a[href^="index"]:hover {
+	background-color: #003b12;
+}
+*/
+#mainFooter {
+	display: block;
+	text-align: right;
+	clear: both;
+}
+

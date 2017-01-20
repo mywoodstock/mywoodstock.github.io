@@ -1,0 +1,147 @@
+div#content p.contentText:first-child:first-letter {
+	color: #6c000a;
+}
+
+div#content {
+	font-family: "Zurich", sans-serif;
+}
+
+div#mainHeader {
+	background-color: #022f65;
+}
+
+div#headerComment {
+	border-bottom: 2px dotted #022f65;
+}
+
+div.semester {
+	width: 76%;
+	margin-left: 14%;
+	clear: left;
+	border-left: 2px dotted #022f65;
+	padding-top: 1px;
+}
+
+div.presentdetails p.contentTextHead {
+	font-weight: bold;	
+	text-transform: uppercase;
+	font-size: smaller;
+	color: #022f65;
+	background-color: #eaeaea;
+	padding-left: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+div.researchprojects, div.researchpub {
+	width: 86%;
+	margin-left: 7%;
+	color: #444;
+}
+
+/* style for course list */
+
+p.semesterTitle {
+	font-weight: bold;
+	color: #999;
+	width: 70px;
+	padding: 10px;
+	text-align: right;
+	position: relative;
+	top: -2em;
+	left: -7.5em;
+}
+
+p.courseDetails {
+	position: relative;
+	margin-top: -55px;
+	margin-left: 10px;
+	color: #444;
+}
+
+.courseNumber {
+	color: #022f65;
+}
+
+.courseName {
+	font-style: italic;
+}
+
+.instructor:before {
+	content: "(";
+}
+
+.instructor:after {
+	content: ")";
+}
+
+.instructor {
+	font-size: smaller;
+	color: #022f65;
+}
+
+.instructor > a.externalLink {
+	color: #022f65;
+}
+
+/* publication styles */
+
+p.publication:before {
+	content: counter(pubCount) ". ";
+	margin-left: -1em;
+	font-weight: bold;
+	color: #999;
+}
+
+p.publication {
+	counter-increment: pubCount;
+}
+
+.authorsfirst {
+	font-size: smaller;
+}
+
+.authorslast {
+	color: #022f65;
+}
+
+.authorslast:after, .journal:after, .volpp:after {
+	content: ", ";
+}
+
+.pubtitle:after, .year:after {
+	content: ". ";
+}
+
+.pubtitle {
+	font-style: italic;
+}
+
+.journal, .volpp, .year {
+	font-size: smaller;
+}
+
+/* research project styles */
+
+.projectTitle:before {
+	/* content: url("../../extern.gif"); */
+	padding-right: 0.3em;
+}
+
+.projectTitle {
+	color: #022f65;
+	margin-left: -1em;
+}
+
+.projectDescription {
+	font-size: smaller;
+	display: block;
+	color: #666;
+	margin-left: 1.5em;
+}
+
+/* navigation bar */
+
+div#navigation > a {
+	background-color: #022f65;
+}

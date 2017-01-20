@@ -1,0 +1,310 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+}
+
+div#headContainer {
+/*	border: 1px solid #aaa; */
+	border-right: 1px dotted #333;
+	margin-top: 100px;
+	margin-left: 10px;
+	padding-left: 10px;
+	width: 280px;
+	min-width: 280px;
+/*	font-family: 'Andale Mono', monospace; */
+	font-family: 'Trebuchet MS', 'Arial', sans-serif;
+	position: fixed; /* THIS IS SOMETHING TO BE FIXED FURTHER LATER - for horizontal scrolling */
+}
+
+/* HEADER */
+
+#mainHeader {
+/*	border: 1px solid #aaa; */
+}
+
+.mainHeadText {
+	font-size: 32px;
+	font-family: 'Trebuchet MS', 'Arial', sans-serif; /* Arial Black', sans-serif; */
+	font-weight: bold;
+}
+
+.mainHeadText[id="function"], .mainHeadText[id="namespace"], #braces {
+	font-size: 25px;
+	vertical-align: 5%;
+	color: #333; 
+}
+
+#braces {
+	font-family: 'Arial', sans-serif;
+	font-weight: normal;
+}
+
+#lastname {
+	color: #bbb;
+}
+
+#firstname {
+	color: #555;
+}
+
+/* C++ */
+
+
+/* NAVIGATION */
+
+#navigation {
+	width: 180px;
+	height: 270px;
+	min-height: 270px;
+	font-size: 22px;
+	vertical-align: top;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+#navigation a {
+	display: block;
+	width: 100%;
+	padding: 4px;
+	color: #aaa;
+}
+
+#navigation a:hover {
+	color: #555;
+}
+
+.function {
+	margin-left: 2px;
+	font-size: 17px;
+	vertical-align: 10%;
+	color: #555;
+}
+
+.function:hover {
+	color: #fff;
+}
+
+/* LINKS */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: #555;
+}
+
+a.externalLink:link {
+	border-bottom: 1px #333 dotted;
+	color: inherit;
+}
+
+a.externalLink:hover {
+	color: #333;
+}
+
+/* FOOTER */
+
+div#footer {
+	width: 100%;
+}
+
+#copyright {
+	width: 100%;
+	margin-left: 10px;
+	font-size: x-small;
+	font-weight: lighter;
+	vertical-align: 30%;
+	color: #333;
+}
+
+div#footer img {
+	width: 13px;
+	vertical-align: -25%;
+	border-width: 0px;
+}
+
+/* CONTENT */
+
+#contentContainer {
+/*	border: 1px solid #aaa; */
+	position: absolute;
+	top: 0px;
+	width: 60%;
+	min-width: 400px;
+	margin-top: 20px;
+	margin-left: 300px;
+	padding-left: 20px;
+	padding-right: 10px;
+	font-family: 'Trebuchet MS', 'Arial', sans-serif;
+}
+
+#contentContainer #contentHeadTitle {
+	color: #bbb;
+}
+
+.contentSection {
+	margin: 10px;
+	padding: 10px;
+	padding-top: 20px;
+	color: #999;
+	clear: both;
+}
+
+.sectionTitle {
+	border-bottom: 1px dotted #333;
+	display: block;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #555;
+}
+
+.contentSubsection {
+	display: block;
+	padding: 10px;
+}
+
+.sectionSubtitle {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: -10px;
+	color: #555;
+}
+
+.sectionText, .publication {
+	display: block;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.sectionText2 {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 13px;
+	color: #777;
+	text-align: right;
+}
+
+.description {
+	font-family: 'Lucida Grande', 'CartoGothicProBook';
+	font-size: 12px;
+	letter-spacing: 0.1px;
+	word-spacing: 1px;
+	font-weight: lighter;
+	line-height: 110%;
+}
+
+.bullet:before {
+	content: url(images/circle.png);
+	padding-right: 3px;
+}
+
+/* Columns and List Items */
+
+.columns {
+	clear: both;
+	width: 100%;
+}
+
+.leftColumn, .rightColumn {
+	width: 45%;
+	float: left;
+	margin: 1%;
+	padding-left: 1%;
+}
+
+.listItem {
+	display: block;
+}
+
+.listItem:before {
+	content: url(images/circle.png);
+	padding-right: 5px;
+}
+
+/* PUBLICATION */
+
+p.publication:before {
+	content: counter(pubCount);
+	font-size: 16px;
+	font-weight: bold;
+	margin-right: 2px;
+	color: #555;
+}
+
+p.publication {
+	counter-increment: pubCount;
+}
+
+.authorsfirst {
+}
+
+.authorslast {
+	color: #ccc;
+}
+
+.authorslast:after, .journal:after, .volpp:after {
+	content: ", ";
+}
+
+.authorsNoteMark:before {
+	content: "*";
+}
+
+.authorsNote:before {
+	content: "(";
+}
+
+.authorsNote:after {
+	content: ")";
+}
+
+.authorsNote {
+	font-size: x-small;
+	font-weight: lighter;
+	font-style: italic;
+	color: #555;
+}
+
+.year:after {
+	content: ". ";
+}
+
+span.pubtitle {
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+}
+
+span.journal, .volpp, .year {
+	font-size: smaller;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

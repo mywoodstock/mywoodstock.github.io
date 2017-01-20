@@ -1,0 +1,73 @@
+/* text */
+
+div#content p.contentText:first-child:first-letter {
+	color: #6c000a;
+}
+
+div#content {
+	font-family: "Zurich", sans-serif;
+}
+
+div#mainHeader {
+	background-color: #6c000a;
+}
+
+div#headerComment {
+	border-bottom: 2px dotted #6c000a;
+}
+
+div#contentBody {
+	width: 70%;
+	margin-left: 20%;
+	margin-top: 30px;
+}
+
+div.contactWays {
+	clear: left;
+	border-left: 2px dotted #6c000a;
+}
+
+p.contentHead1 {
+	font-weight: bold;
+	font-size: larger;
+	text-transform: capitalize;
+	color: #003b12;
+	width: 70px;
+	padding: 10px;
+	text-align: right;
+	position: relative;
+	top: -1em;
+	left: -6.5em;
+}
+
+div.contactContent {
+	position: relative;
+	margin-top: -55px;
+	margin-left: 10px;
+}
+
+div.contactContent > span {
+	display: block;
+}
+
+p.contentHead2 {
+	color: #6c000a;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+div#navigation > a {
+	background-color: #6c000a;
+}
+
+div#email {
+}
+
+div#postal {
+}
+
+div#voice {
+}
+
+div#web {
+}

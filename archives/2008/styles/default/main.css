@@ -1,0 +1,196 @@
+/* links */
+
+a:link {
+	text-decoration: none;
+	color: #003b12;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #004b22;
+}
+
+a:active {
+	text-decoration: none;
+	color: #ff0000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.externalLink {
+	color: #6c000a;
+}
+
+a.localLink {
+}
+
+a.externalLink:after {
+	content: "";
+}
+
+/* navigation bars */
+
+#navigation {
+	clear: both;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+#navigation .localLink {
+	color: #fff;
+}
+
+/* text */
+
+.mainheadText {
+	font-family: 'Zurich UltraBlack', sans-serif;
+	font-size: xx-large;
+	color: #fff;
+}
+
+.mainheadText[id="first"] {
+	font-weight: 300;
+}
+
+.mainheadText[id="last"] {
+	position: relative;
+	left: -5px;
+	font-weight: 800;
+}
+
+.footerText {
+	font-family: 'Zurich', sans-serif;
+	font-weight: lighter;
+	font-size: x-small;
+}
+
+p.commentText {
+	font-family: 'Zurich', sans-serif;
+	font-weight: lighter; 
+	font-size: 90%;
+	color: #aaa;
+	font-style: italic;
+}
+
+p.contentText {
+	font-family: 'Verdana', 'Zurich', sans-serif;
+/*	text-indent: 2em; */
+	text-align: left;
+	color: #444;
+	line-height: 1.5em;
+}
+
+div#mainContainer {
+	font-size: small;
+}
+
+div#content p.contentText:first-child:first-letter {
+	font-family: fantasy serif;
+	font-size: 350%;
+	font-weight: bold;
+	float: left;
+	margin-right: 5px;
+}
+
+div.construction {
+	background-color: #f0f0f0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.construction:before {
+	font-family: 'Zurich', sans-serif;
+	font-weight: bolder;
+	font-style: italic;
+	color: #333;
+	content: "Still a construction zone. Please check back later.";
+	margin-left: 15%;
+	width: 50%;
+}
+
+/* positioning */
+
+#mainContainer {
+	display: block;
+	width: 85%;
+	min-width: 400px;
+   	padding: 2.5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2.5%;
+	padding-top: 0;
+}
+
+div#mainHeader {
+	display: block;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	text-align: right;
+	border-left: 8px double #ffffff;
+	border-right: 8px double #ffffff;
+/*	border-radius: 15px;
+ *	-webkit-border-radius: 15px;
+ *	-moz-border-radius: 15px;*/
+}
+
+.mainheadText {
+	text-transform: uppercase;
+}
+
+div#headerComment {
+	width: 80%;
+	margin-left: 10%;
+	display: block;
+	text-align: center;
+}
+
+div#content {
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+#navigation {
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div#navigation > a {
+	display: inline-block;
+	width: 28%;
+	padding: 0.2em;
+	border-left: 6px double #ffffff;
+	border-right: 6px double #ffffff;
+}
+
+div#navigation > a:hover {
+	text-decoration: none;
+}
+
+div#navigation > a[href^="contact"]:hover {
+	background-color: #6c000a;
+}
+
+div#navigation > a[href^="past"]:hover {
+	background-color: #757000;
+}
+
+div#navigation > a[href^="present"]:hover {
+	background-color: #022f65;
+}
+
+div#navigation > a[href^="index"]:hover {
+	background-color: #003b12;
+}
+
+#mainFooter {
+	display: block;
+	text-align: right;
+	clear: both;
+}
+

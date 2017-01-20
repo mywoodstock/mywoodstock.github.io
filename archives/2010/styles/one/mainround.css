@@ -1,0 +1,23 @@
+div#headerComment {
+	border: 2px solid #ccc;
+	border-radius: 14px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-khtml-border-radius: 15px;	
+}
+
+div#navigation a div.right {
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-khtml-border-radius: 9px;	
+}
+
+div#navigation a:hover div.right {
+	text-decoration: none;
+	background-color: #dcdcdc;
+	height: 14px;
+	height: 0.45em;
+}
+

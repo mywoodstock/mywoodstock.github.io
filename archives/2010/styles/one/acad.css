@@ -1,0 +1,254 @@
+div#content p.contentText:first-child:first-letter {
+}
+
+div#content {
+	font-family: "Zurich", sans-serif;
+}
+
+div#mainHeader {
+}
+
+div#headerComment {
+}
+
+div.presentdetails p.contentTextHead {
+	font-weight: bold;	
+	font-size: 2em;
+	max-height: 0.6em;
+	color: #444;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: right;
+}
+
+div.presentdetails p.contentTextHead  > span {
+	visibility: inherit;
+	position: relative;
+/*	opacity: 0.4; */
+	color: #bbb;
+}
+
+/*p.contentTextHead div.top, p.contentTextHead div.bottom, p.contentTextHead div.left, p.contentTextHead div.right {
+	display: inline;
+}*/
+
+div.researchprojects, div.researchpub {
+	width: 86%;
+	margin-left: 7%;
+	color: #444;
+}
+
+/* style for course list */
+
+div.semester {
+	width: 86%;
+	margin-left: 14%;
+}
+
+p.semesterTitle {
+	font-weight: bold;
+	font-size: 1.8em;
+	color: #ccc;
+	width: 6em;
+	padding: 10px;
+	text-align: right;
+	position: relative;
+	top: -0.7em;
+	left: -5.5em;
+}
+
+p.courseDetails {
+	position: relative;
+	margin-top: -55px;
+	margin-left: 10px;
+	color: #444;
+	line-height: 1.5em;
+}
+
+.courseNumber {
+	color: #333;
+}
+
+.courseName {
+	font-weight: bold;
+	color: #777;
+	position: relative;
+	z-index: 1;
+}
+
+.courseName:before {
+	content: open-quote;	 	
+	color: #ddd;
+	position: relative;
+	z-index: -1;
+	font-size: 3em;
+	vertical-align: -70%;
+	margin-right: -0.3em;
+	margin-left: -0.2em;
+}
+
+.courseName:after {
+	content: close-quote;	 	
+	color: #ddd;
+	position: relative;
+	z-index: -1;
+	font-size: 3em;
+	vertical-align: -70%;
+	margin-right: -0.2em;
+	margin-left: -0.1em;
+}
+
+.instructor:before {
+	content: "by ";
+}
+
+.instructor:after {
+	content: "";
+}
+
+.instructor {
+	font-size: smaller;
+}
+
+.instructor > a.externalLink {
+}
+
+/* publication styles */
+
+p.publication:before {
+	content: counter(pubCount);
+	font-weight: bold;
+	color: #ccc;
+	font-size: 2.5em;
+	margin-left: -1em;
+	margin-right: -0.5em;
+	position: relative;
+	margin-top: 2em;
+	vertical-align: -20%;
+	z-index: -1;
+}
+
+p.publication {
+	counter-increment: pubCount;
+	position: relative;
+	line-height: 1.5em;
+}
+
+.authorsfirst {
+	font-size: smaller;
+	position: relative;
+	z-index: 1;
+}
+
+.authorslast {
+	color: #111;
+}
+
+.authorslast:after, .journal:after, .volpp:after {
+	content: ", ";
+}
+
+.authorsNoteMark:before {
+	content: "*";
+}
+
+.authorsNote:before {
+	content: "(";
+}
+
+.authorsNote:after {
+	content: ")";
+}
+
+.authorsNote {
+	font-size: smaller;
+	font-style: italic;
+}
+
+.year:after {
+	content: ". ";
+}
+
+span.pubtitle:before {
+	content: open-quote;	 	
+	color: #ccc;
+	font-size: 3em;
+	position: relative;
+	z-index: -1;
+	vertical-align: -60%;
+	margin-right: -0.3em;
+	margin-left: -0.2em;
+}
+
+span.pubtitle:after {
+	content: close-quote;	 	
+	color: #ccc;
+	font-size: 3em;
+	position: relative;
+	z-index: -1;
+	vertical-align: -60%;
+	margin-right: -0.2em;
+	margin-left: -0.1em;
+}
+
+span.pubtitle {
+	font-weight: bold;
+	color: #555;
+	position: relative;
+	z-index: 1;
+}
+
+span.journal, .volpp, .year {
+	font-size: smaller;
+}
+
+/* research project styles */
+
+p.projectdetails {
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+.projectTitle {
+	font-weight: bold;
+	color: #666;
+	margin-left: -1em;
+	line-height: 1em;
+	position: relative;
+	z-index: 1;
+}
+
+.projectTitle:before {
+	content: open-quote;	 	
+	color: #ccc;
+	position: relative;
+	z-index: -1;
+	font-size: 3em;
+	vertical-align: -70%;
+	margin-right: -0.3em;
+	margin-left: -0.2em;
+}
+
+.projectTitle:after {
+	content: close-quote;	 	
+	color: #ccc;
+	position: relative;
+	z-index: -1;
+	font-size: 3em;
+	vertical-align: -70%;
+	margin-left: -0.1em;
+}
+
+.projectDescription {
+	font-size: smaller;
+	letter-spacing: 0.3px;
+	color: #666;
+	margin-left: -0.6em;
+}
+
+/* navigation bar */
+
+div#navigation > a {
+}

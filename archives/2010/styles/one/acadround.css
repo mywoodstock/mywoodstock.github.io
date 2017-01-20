@@ -1,0 +1,10 @@
+div.presentdetails p.contentTextHead {
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+}
+
+div.presentdetails p.contentTextHead > span {
+	top: -0.2em;
+}

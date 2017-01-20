@@ -1,0 +1,35 @@
+div.aboutBlock p.aboutHead > span {
+	top: 0.1em;
+}
+
+div.aboutBlock div.top {
+	background: url(../../images/dot.png) 0 0 repeat-x;
+}
+
+div.aboutBlock div.bottom {
+	background: url(../../images/dot.png) 0 100% repeat-x;
+}
+
+div.aboutBlock div.left {
+	background: url(../../images/ltitle.png) 0 0 no-repeat;
+}
+
+div.aboutBlock div.right {
+	height: 23px;
+	background: url(../../images/rtitle.png) 100% 0 no-repeat;
+}
+
+/* other IE hacks */
+
+div.columns {
+	margin-top: 15px;
+}
+
+div.aboutBlock {
+	padding-top: 0;
+	margin-top: 30px;
+}
+
+div.aboutBlock p.aboutHead {
+	padding-top: 0;
+}
