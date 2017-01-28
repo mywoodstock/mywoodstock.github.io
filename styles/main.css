@@ -1,3 +1,12 @@
+/**
+ *  Current Palette:
+ *    orange:     #ff8e42   #ffac75
+ *    slate:      #204444   #306767
+ *    blue:       #679a9a   #86aeae
+ *    gray:       #909a92   #abb2ac
+ *    chocolate:  #c9601a   #e47932
+ */
+
 /* Overall */
 
 body {
@@ -5,6 +14,7 @@ body {
   margin-top:   100px;
   padding:      10px;
   font-family:  'Trebuchet MS', 'Arial', sans-serif;
+  color:        #909A92;
 }
 
 a {
@@ -15,7 +25,7 @@ a {
 /* Navigation */
 
 nav#primary {
-  border-right:   3px solid #b9be94;
+  border-right:   3px solid #ffac75;
   margin-left:    100px;
   padding-right:  20px;
   padding-bottom: 10px;
@@ -31,7 +41,11 @@ nav a {
   width:      100%;
   padding:    4px;
   text-align: right;
-  color:      #b9be94;
+  color:      #86aeae;
+}
+
+nav a:hover {
+  color:      #679a9a;
 }
 
 
@@ -40,6 +54,38 @@ nav a {
 .content {
   margin-left:    400px;
 }
+
+
+/* Footer */
+
+footer {
+/*  display:          none;*/
+  position:         absolute;
+  bottom:           20px;
+  padding:          4px;
+  height:           20px;
+  text-align:       center;
+  vertical-align:   middle;
+/*  background-color: #fbf2ec;*/
+}
+
+footer .badges {
+  display:    inline;
+  height:     20px;
+  padding:    0.5px;
+}
+
+footer .badges img {
+  border:     0;
+  padding:    0;
+  display:    inline;
+  filter:     grayscale(95%) brightness(100%) contrast(100%);
+}
+
+footer .badges img:hover {
+  filter:     grayscale(0);
+}
+
 
 /* Miscellaneous */
 
