@@ -10,7 +10,10 @@
 /* Overall */
 
 body {
-  margin:       10px;
+  border:       1px dotted;
+  width:        80%;
+  min-width:    600px;
+  margin:       auto;
   margin-top:   100px;
   padding:      10px;
   font-family:  'Trebuchet MS', 'Arial', sans-serif;
@@ -19,20 +22,38 @@ body {
 
 a {
   text-decoration:  none;
+  color:            inherit;
+}
+
+
+/* Header */
+
+header {
+  border:         1px dotted;
+  display:        block;
+  margin-left:    auto;
+  margin-right:   5%;
+  margin-bottom:  20px;
+  padding:        10px;
+  width:          50%;
+  text-align:     right;
+  font-size:      2em;
 }
 
 
 /* Navigation */
 
 nav#primary {
+  border:         1px dotted;
   border-right:   3px solid #ffac75;
-  margin-left:    100px;
+  margin-left:    10px;
   padding-right:  20px;
   padding-bottom: 10px;
   position:       absolute;
-  width:          250px;
+  width:          20%;
+  min-width:      140px;
   min-height:     100px;
-  font-size:      24px;
+  font-size:      1.5em;
   vertical-align: middle;
 }
 
@@ -52,7 +73,10 @@ nav a:hover {
 /* Main Content */
 
 .content {
-  margin-left:    400px;
+  border:         1px dotted;
+  margin:         30px;
+  margin-left:    33%;
+  margin-right:   5%;
 }
 
 
@@ -79,10 +103,12 @@ footer .badges img {
   border:     0;
   padding:    0;
   display:    inline;
+  opacity:    0.6;
   filter:     grayscale(95%) brightness(100%) contrast(100%);
 }
 
 footer .badges img:hover {
+  opacity:    1;
   filter:     grayscale(0);
 }
 
