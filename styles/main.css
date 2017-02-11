@@ -1,23 +1,33 @@
 /**
  *  Current Palette:
+ *                main      light
  *    orange:     #ff8e42   #ffac75
  *    slate:      #204444   #306767
  *    blue:       #679a9a   #86aeae
  *    gray:       #909a92   #abb2ac
  *    chocolate:  #c9601a   #e47932
  */
+:root {
+  --main-text-color:      #909A92;
+  --accent-color:         #ff8e42;
+  --nav-color:            #679a9a;
+  --highlight-nav-color:  #fefefe;
+  --highlight-bg-color:   #ffac75;
+  --guide-border:         0.5px dotted #aa0000;
+  --footer-height:        20px;
+}
 
 /* Overall */
 
 body {
-  border:       1px dotted;
+  border:       var(--guide-border);
   width:        80%;
   min-width:    600px;
   margin:       auto;
   margin-top:   100px;
   padding:      10px;
   font-family:  'Trebuchet MS', 'Arial', sans-serif;
-  color:        #909A92;
+  color:        var(--main-text-color);
 }
 
 a {
@@ -29,7 +39,7 @@ a {
 /* Header */
 
 header {
-  border:         1px dotted;
+  border:         var(--guide-border);
   display:        block;
   margin-left:    auto;
   margin-right:   5%;
@@ -37,15 +47,17 @@ header {
   padding:        10px;
   width:          50%;
   text-align:     right;
-  font-size:      2em;
+  font-size:      2.25em;
+  font-weight:    bold;
+  color:          var(--accent-color);
 }
 
 
 /* Navigation */
 
 nav#primary {
-  border:         1px dotted;
-  border-right:   3px solid #ffac75;
+  border:         var(--guide-border);
+  border-right:   3px solid var(--accent-color);
   margin-left:    10px;
   padding-right:  20px;
   padding-bottom: 10px;
@@ -58,22 +70,24 @@ nav#primary {
 }
 
 nav a {
-  display:    block;
-  width:      100%;
-  padding:    4px;
-  text-align: right;
-  color:      #86aeae;
+  display:        block;
+  width:          100%;
+  padding:        4px;
+  padding-right:  10px;
+  text-align:     right;
+  color:          var(--nav-color);
 }
 
 nav a:hover {
-  color:      #679a9a;
+  color:            var(--highlight-nav-color);
+  background-color: var(--highlight-bg-color);
 }
 
 
 /* Main Content */
 
 .content {
-  border:         1px dotted;
+  border:         var(--guide-border);
   margin:         30px;
   margin-left:    33%;
   margin-right:   5%;
@@ -83,20 +97,19 @@ nav a:hover {
 /* Footer */
 
 footer {
-/*  display:          none;*/
-  position:         absolute;
-  bottom:           20px;
-  padding:          4px;
-  height:           20px;
-  text-align:       center;
-  vertical-align:   middle;
-/*  background-color: #fbf2ec;*/
+  border:         var(--guide-border);
+  position:       absolute;
+  bottom:         20px;
+  padding:        5px;
+  height:         var(--footer-height);
+  text-align:     left;
+  vertical-align: middle;
 }
 
 footer .badges {
   display:    inline;
-  height:     20px;
-  padding:    0.5px;
+  height:     var(--footer-height);
+  padding:    0.8px;
 }
 
 footer .badges img {
