@@ -11,10 +11,26 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!-- <link rel="import" href="header.html" onload="handleLoad(event)" onerror="handleError(event)">
+    <script>
+      function handleLoad(e) {
+        console.log('Loaded import: ' + e.target.href);
+      }
+      function handleError(e) {
+        console.log('Error loading import: ' + e.target.href);
+      }
+    </script> -->
   </head>
   
   <body>
-    
+
+<!--    <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+    var el = content.querySelector('header');
+    document.body.appendChild(el.cloneNode(true));
+    </script> -->
+
     <header>
       <a href="index.html">
         <div id="headername">
@@ -50,40 +66,59 @@
     <footer>
       <div id="badges">
         <span class="badges" id="linkedin">
-          <a href="https://www.linkedin.com/in/abhinavsarje"><img src="images/linkedin.png" height="20px"></img></a>
+          <a href="https://www.linkedin.com/in/abhinavsarje">
+            <img src="images/linkedin.png" height="20px"></img>
+          </a>
         </span>
         <span class="badges" id="googlescholar">
-          <a href="https://scholar.google.com/citations?user=J2NzipIAAAAJ"><img src="images/google.png" height="20px"></img></a>
+          <a href="https://scholar.google.com/citations?user=J2NzipIAAAAJ">
+            <img src="images/google.png" height="20px"></img>
+          </a>
         </span>
         <span class="badges" id="researchgate">
-          <a href="https://www.researchgate.net/profile/Abhinav_Sarje"><img src="images/researchgate.png" height="20px"></img></a>
+          <a href="https://www.researchgate.net/profile/Abhinav_Sarje">
+            <img src="images/researchgate.png" height="20px"></img>
+          </a>
         </span>
         <span class="badges" id="github">
-          <a href="https://github.com/mywoodstock"><img src="images/github.png" height="20px"></img></a>
+          <a href="https://github.com/mywoodstock">
+            <img src="images/github.png" height="20px"></img>
+          </a>
         </span>
         <span class="badges" id="bitbucket">
-          <a href="https://bitbucket.org/mywoodstock"><img src="images/bitbucket.png" height="20px"></img></a>
+          <a href="https://bitbucket.org/mywoodstock">
+            <img src="images/bitbucket.png" height="20px"></img>
+          </a>
         </span>
         <span class="badges" id="orcid">
-          <a href="http://orcid.org/0000-0002-8696-9095"><img src="images/orcid.png" height="20px"></img></a>
+          <a href="http://orcid.org/0000-0002-8696-9095">
+            <img src="images/orcid.png" height="20px"></img>
+          </a>
         </span>
         <span class="badges" id="researcherid">
-          <a href="http://www.researcherid.com/rid/B-7105-2017"><img src="images/researcherid.gif" height="20px"></img></a>
+          <a href="http://www.researcherid.com/rid/B-7105-2017">
+            <img src="images/researcherid.gif" height="20px"></img>
+          </a>
         </span>
         <span class="badges" id="instagram">
-          <a href="https://www.instagram.com/w0st0k"><img src="images/instagram-glyph.png" height="20px"></img></a>
+          <a href="https://www.instagram.com/w0st0k">
+            <img src="images/instagram-glyph.png" height="20px"></img>
+          </a>
         </span>
         <span class="badges" id="lastfm">
-          <a href="http://www.last.fm/user/mywoodstock"><img src="images/lastfm.png" height="20px"></img></a>
+          <a href="http://www.last.fm/user/mywoodstock">
+            <img src="images/lastfm.png" height="20px"></img>
+          </a>
         </span>
         <span class="badges" id="facebook">
-          <a href="https://www.facebook.com/abhinav.sarje"><img src="images/facebook.png" height="20px"></img></a>
+          <a href="https://www.facebook.com/abhinav.sarje">
+            <img src="images/facebook.png" height="20px"></img>
+          </a>
         </span>
-        <!-- <span class="badges" id="tumblr">
-          <a href=""><img src="images/tumblr.png" height="20px"></img></a>
-        </span> -->
         <span class="badges" id="twitter">
-          <a href="https://twitter.com/18thwoodstock"><img src="images/twitter.png" height="20px"></img></a>
+          <a href="https://twitter.com/18thwoodstock">
+            <img src="images/twitter.png" height="20px"></img>
+          </a>
         </span>
       </div>
     </footer>
