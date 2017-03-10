@@ -3,21 +3,12 @@
 
   <head>
     <meta charset="utf-8">
+    <link href="styles/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="scripts/main.js"></script>
     <title>
       My Woodstock Webpage
     </title>
-    <link href="styles/main.css" rel="stylesheet">
-    <!-- // <script src="scripts/main.js"></script> -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-
-    <!-- <link href="nav.html" rel="import"> -->
-
-    <script>
-    function handleLoad(event) { console.log('Loaded import: ' + event.target.href); }
-    function handleError(event) { console.log('Error loading import: ' + event.target.href); }
-    </script>
-    <link rel="import" href="nav.html" onload="handleLoad(event)" onerror="handleError(event)">
-    
   </head>
   
   <body>
@@ -31,10 +22,7 @@
       </a>
     </header>
 
-<!-- <object name="nav" type="text/html" data="nav.html"></object> -->
-<!-- <embed type="text/html" src="nav.html"> -->
-
-    <!-- <nav id="primary">
+    <nav id="primary">
       <ul>
         <li><a href="about">        about       </a></li>
         <li><a href="contact">      contact     </a></li>
@@ -43,28 +31,7 @@
         <li><a href="updates">      updates     </a></li>
         <li><a href="work">         work        </a></li>
       </ul>
-    </nav> -->
-
-    <!-- <nav id="primary">
-      <span><a href="about">about</a></span>
-      <span><a href="contact">contact</a></span>
-      <span><a href="publications">publications</a></span>
-      <span><a href="research">research</a></span>
-      <span><a href="updates">updates</a></span>
-      <span><a href="work">work</a></span>
-    </nav> -->
-
-    <script>
-      // var doc = document.querySelector('link[rel="import"]').import;
-      // // Grab DOM from doc.html's document.
-      // var text = doc.querySelector('#primary');
-      // document.body.appendChild(text.cloneNode(true));
-
-      var doc = document.querySelector('link[rel="import"]').import;
-      var text = doc.querySelector('#primary');
-      var clone = document.importNode(text.content, true);
-      document.querySelector('#primary').appendChild(clone);
-    </script>
+    </nav>
 
     <div class="content">
 

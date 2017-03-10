@@ -69,6 +69,11 @@ nav#primary {
   vertical-align: middle;
 }
 
+nav li {
+  border:           var(--guide-border);
+  list-style-type:  none;
+}
+
 nav a {
   display:        block;
   width:          100%;
